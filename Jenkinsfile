@@ -4,7 +4,7 @@ pipeline{
         maven 'maven' 
     }
     environment {
-        DOCKERHUB_CREDENTIALS_ID = 'docker_cred' 
+        DOCKERHUB_CREDENTIALS_ID = 'credentials' 
         DOCKERHUB_USERNAME       = 'shyam0115'
         IMAGE_NAME               = "${env.DOCKERHUB_USERNAME}/my-app"
         CONTAINER_NAME           = "my-app-container"

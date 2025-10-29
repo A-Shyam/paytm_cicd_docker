@@ -13,7 +13,7 @@ pipeline{
         stage('Github src') {
             steps {
                 echo 'Checking out source code...'
-                git branch: 'master', url: ''
+                git branch: 'master', url: 'https://github.com/A-Shyam/paytm_cicd_docker'
             }
         }
 
